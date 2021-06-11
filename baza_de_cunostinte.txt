@@ -1,0 +1,316 @@
+Salut
+	:link
+	Ce fel de subgen de film horror doresti?
+		:Lista cu subgenuri
+		Body horror
+			:link
+			Ce categorie de film Body horror ai dori sa vezi?
+				:Lista categorii body horror
+				Boli
+					:Virus mortal
+					Pontypool
+					:Blestem
+					It Comes At Night
+					:Zombie
+					28 Days Later
+					I Am Legend
+				Mutatii
+					:Oameni mutatnti
+					Castle Freak
+					:Monstru
+					Cyst
+				Mutilatii
+					:Experiment
+					The Human Centipede
+					:Western
+					Bone Tomahawk
+					:Dementa
+					À l'intérieur
+				Violenta extrema
+					:Pornografie
+					A Serbian Film
+					:Sclavi
+					Salo, or the 120 Days of Sodom
+					:Razbunare
+					Martyrs
+					:Psihologic
+					A Clockwork orange
+					:Triade
+					Ichi the killer
+					:Triburi
+					Cannibal holocauste
+		Comedy horror
+			:link
+			Ce categorie de film Comedy horror ai dori sa vezi?
+				:Lista categorii comedy horror
+				Parodie
+					:link
+					Dupa filme
+						:cu fantome
+						A Haunted House
+						:cu obiecte blestemate
+						You might be the killer
+						:cu criminali in serie
+						The Final Girls
+						:cu de toate
+						Scary Movie
+					Fricile societatii
+						:link
+						The Cabin in the Woods
+				Original
+					:legenda de Craciun
+					Krampus
+					:Paranoie
+					Tucker & Dale vs Evil
+					:cult
+					The Babysitter
+					:Apocalipsa zombie
+					Zombieland
+					Shaun of the dead
+					:Halloween
+					Trick 'r Treat
+					:mutilatie
+					Tusk
+		Folk horror
+			:link
+			Ce categorie de film Folk horror ai dori sa vezi?
+				:Lista categorii folk horror
+				Cult
+					:link
+					Religios
+						:salvare
+						Apostle
+						:cautare
+						The Wicker Man
+					:Vrajitoare
+					The Witch
+					:Tragedie
+					Hereditary
+					:Fapte reale
+					Midsommar
+					:Legenda urbana
+					The Endless
+					The Ritual
+					:Petrecere
+					The Invitation
+					:Ritual
+					We summon the darkness
+					Kill List
+					:Psihologic
+					The lodge
+					Mother!
+				Supernatural
+					:link
+					Cu fantome, vampiri sau zombie
+						:link
+						Fantome
+							:link
+							Inspirat din realitate
+								:serie principala
+								The Conjuring
+								The Conjuring 2
+								:serie secundara
+								The Nun
+								Annabelle 3
+							:multe jump scare
+							Insidious
+							:mister
+							The Autopsy of Jane Doe
+							:psihologic
+							A Ghost Story
+						Vampiri
+							:modern
+							A Girl Walks Home Alone at Night
+							Fright Night
+							:clasic
+							Let the right one in
+						Zombie
+							:apocalipsa
+							World War Z
+							I Am Legend
+							:infectie
+							The girl with all the gifths
+							:mister
+							Open Grave
+		Found footage horror
+			:link
+			Ce categorie de film found footage ai dori sa vezi?
+				:Lista categorii footage horror
+				Reportaj
+					:link
+					Virus, Inspirat din fapte reale, Paranormal, Investigatie
+						:Virus
+						Rec
+						:Fapte reale
+						The poughkeepsie tapes
+						Creep
+						:Paranormal
+						Paranormal activity
+						:Investigatie
+						Trolljegeren
+				First Person
+					:link
+					Virus, Atac monstru, documentar, chat
+						:Virus
+						Quarantine
+						Documentar
+							:remaster
+							Blair Witch
+							:original
+							The Blair Witch Project
+						:Chat
+						Unfriended
+						:Atac monstru
+						Cloverfield
+		Gothic horror
+			:link
+			Ce categorie de film Gothic horror ai dori sa vezi?
+				:Lista categorii gothic horror
+				Supranaturale
+					:link
+					Fantome sau Vampiri
+						:link
+						Fantome
+							:link
+							Case bantuite sau Musical
+								:link
+								Case bantuite
+									:link
+									Mister, casa bantuita, incurcat sau tragedie
+										:Casa bantuita
+										The Haunting
+										:Mister
+										The Woman in Black
+										:incurcat
+										The Others
+										:tragic
+										Crimson Peak
+								:Musical
+								The Phantom of the Opera
+						Vampiri
+							:link
+							Clasice sau moderne
+								:clasice
+								Dracula
+								Nosferatu: Phantom der Nacht
+								:modern
+								Interview with the Vampire: The Vampire Chronicles
+				Elemente de Cosmar
+					:link
+					Mister sau Blestem
+						:Mister
+						The Eyes of My Mother
+						The Skeleton Key
+						:Blestem
+						The Lodgers
+						The Orphanage
+		Natural horror
+			:link
+			Ce categorie de film Natural horror ai dori sa vezi?
+				:Lista categorii de natural horror
+				Animale mutante
+					:link
+					Animale Acvatice
+						:link
+						Cu rechini sau cu Reptile
+							:rechini
+							Jaws
+							:reptile
+							Crawl
+							Alligator
+					Animale Terestre
+						:link
+						Insecte, Mamifere, Pasari sau Reptile
+							:Insecte
+							Stung
+							:Mamifere
+							Into the Grizzly Maze
+							:Pasari
+							The Birds
+							:Reptile
+							Anaconda
+				Plante mutante
+					:link
+					Clasice sau moderne
+						:Clasice
+						The Ruins
+						Attack of the Killer Tomatoes
+						:Moderne
+						Little Joe
+						Annihilation
+		Slasher horror
+			:link
+			Ce categorie de film slasher ai dori sa vezi?
+				:Lista categorii de slasher
+				Horror-thrillers
+					:link
+					Inspirate din fapte reale
+						:da
+						The silence of the lambs
+						Hanibal
+						Red dragon
+						:nu
+						Hush
+						The Platform
+				Splatter
+					:link
+					Clasice sau moderne
+						:link
+						Clasice
+							:Lista de filme
+							Cannibal Holocaust
+							SAW
+							Evil Dead
+						Moderne
+							:Lista de filme
+							The Devil's Rejects
+							I Spit on Your Grave
+				Criminali in serie
+					:link
+					Uman sau Anomalie
+						:link
+						Uman
+							:link
+							Clasice sau moderne
+								:link
+								Clasice
+									:link
+									Inspirate din fapte reale
+										:da
+										Psycho
+										Scream
+										:nu
+										I Know What You Did Last Summer
+										A clockwork orange
+								Moderne
+									:link
+									Inspirat din fapte reale
+										:da
+										American Psycho
+										Sweeney Todd: The Demon Barber of Fleet Street
+										:nu
+										The house that jack built
+										You're Next
+						Anomalie
+							:link
+							Clasice sau moderne
+								:link
+								Clasice
+									:link
+									Inspirat din fapte reale
+										:da
+										Halloween
+										The Texas Chain Saw Massacre
+										:nu
+										Candyman
+										Friday the 13th
+										A Nightmare on Elm Street
+								Moderne
+									:link
+									Inspirat din fapte reale
+										:da
+										Halloween kills
+										Leatherface
+										:nu
+										IT
+										IT 2

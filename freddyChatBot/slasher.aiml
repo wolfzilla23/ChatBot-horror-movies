@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	 
+    <category>
+        <pattern>slasher horror</pattern>
+        <template>Ce categorie de film slasher ai dori sa vezi ?
+            <button>
+                <text>Criminali in serie</text>
+                <postback>criminali in serie</postback>
+            </button>
+            <button>
+                <text>Splatter</text>
+                <postback>splatter</postback>
+            </button>
+            <button>
+                <text>Horror-Thrillers</text>
+                <postback>thriller</postback>
+            </button>
+
+            <think>
+                <set name = "topic">slasher</set>
+            </think>
+            <think>
+                <set name="categorie">slasher</set>
+            </think>
+        </template>
+    </category>
+    
+    <!-- Criminali in serie -->
+    <topic name = "slasher">
+        
+        <category>
+            <pattern>Criminali in serie</pattern>
+            <template>Criminalul sa fie om sau anomalie ?
+                <button>
+                    <text>Om</text>
+                    <postback>om</postback>
+                </button>
+                <button>
+                    <text>Anomalie</text>
+                    <postback>anomalie</postback>
+                </button>
+
+                <think>
+                    <set name = "topic">Slasherthrill</set>
+                </think>
+                <think>
+                    <set name="tip">thrillSlasher</set>
+                </think>
+            </template>
+        </category>
+        
+        
+        
+    <topic name ="Slasherthrill">
+        
+        <category>
+            <pattern>Om</pattern>
+            <template>Filmul sa fie clasic sau modern ?
+                <button>
+                    <text>Clasic</text>
+                    <postback>clasic</postback>
+                </button>
+                <button>
+                    <text>Modern</text>
+                    <postback>modern</postback>
+                </button>
+  
+                <think>
+                    <set name = "topic">clasicSlasherthrill</set>
+                </think>
+                <think>
+                    <set name="tip">ClasicSlasherthrill</set>
+                </think>
+            </template>
+        </category>
+        
+        
+        <topic name ="Slasherthrill">
+        
+        <category>
+            <pattern>Anomalie</pattern>
+            <template>Filmul sa fie clasic sau modern ?
+                <button>
+                    <text>Clasic</text>
+                    <postback>clasic</postback>
+                </button>
+                <button>
+                    <text>Modern</text>
+                    <postback>modern</postback>
+                </button>
+  
+                <think>
+                    <set name = "topic">cclasicSlasherthrill</set>
+                </think>
+                <think>
+                    <set name="tip">ClasicSlasherthrill</set>
+                </think>
+            </template>
+        </category>
+ 
+            <topic name ="cclasicSlasherthrill">
+        <category>
+            <pattern>Clasic</pattern>
+            <template>Filmul sa fie inspirat din fapte reale ?
+                <button>
+                    <text>Sa fie</text>
+                    <postback>sa fie</postback>
+                </button>
+                <button>
+                    <text>Sa nu fie</text>
+                    <postback>sa nu fie</postback>
+                </button>
+  
+                <think>
+                    <set name = "topic">daaclasicSlasherthrill</set>
+                </think>
+                <think>
+                    <set name="tip">nuclasicSlasherthrill</set>
+                </think>
+            </template>
+        </category>
+        
+        <topic name ="cclasicSlasherthrill">
+        
+        <category>
+            <pattern>Modern</pattern>
+            <template>Filmul sa fie inspirat din fapte reale ?
+                <button>
+                    <text>Sa fie inspirat</text>
+                    <postback>sa fie inspirat</postback>
+                </button>
+                <button>
+                    <text>Sa nu fie inspirat</text>
+                    <postback>sa nu fie inspirat</postback>
+                </button>
+  
+                <think>
+                    <set name = "topic">daamodernSlasherthrill</set>
+                </think>
+                <think>
+                    <set name="tip">numodernSlasherthrill</set>
+                </think>
+            </template>
+        </category>   
+
+        
+        <topic name ="clasicSlasherthrill">
+        <category>
+            <pattern>Clasic</pattern>
+            <template>Filmul sa fie inspirat din fapte reale ?
+                <button>
+                    <text>Sa fie</text>
+                    <postback>sa fie</postback>
+                </button>
+                <button>
+                    <text>Sa nu fie</text>
+                    <postback>sa nu fie</postback>
+                </button>
+  
+                <think>
+                    <set name = "topic">daclasicSlasherthrill</set>
+                </think>
+                <think>
+                    <set name="tip">nuclasicSlasherthrill</set>
+                </think>
+            </template>
+        </category>
+        
+        <topic name ="clasicSlasherthrill">
+        
+        <category>
+            <pattern>Modern</pattern>
+            <template>Filmul sa fie inspirat din fapte reale ?
+                <button>
+                    <text>Sa fie inspirat</text>
+                    <postback>sa fie inspirat</postback>
+                </button>
+                <button>
+                    <text>Sa nu fie inspirat</text>
+                    <postback>sa nu fie inspirat</postback>
+                </button>
+  
+                <think>
+                    <set name = "topic">damodernSlasherthrill</set>
+                </think>
+                <think>
+                    <set name="tip">numodernSlasherthrill</set>
+                </think>
+            </template>
+        </category>       
+        
+        <topic name ="cclasicSlasherthrill">
+        <category>
+            <pattern>Clasic</pattern>
+            <template>Filmul sa fie inspirat din fapte reale ?
+                <button>
+                    <text>Sa fie</text>
+                    <postback>sa fie</postback>
+                </button>
+                <button>
+                    <text>Sa nu fie</text>
+                    <postback>sa nu fie</postback>
+                </button>
+  
+                <think>
+                    <set name = "topic">daaclasicSlasherthrill</set>
+                </think>
+                <think>
+                    <set name="tip">nuuclasicSlasherthrill</set>
+                </think>
+            </template>
+        </category>
+        
+        <topic name ="cclasicSlasherthrill">
+        
+        <category>
+            <pattern>Modern</pattern>
+            <template>Filmul sa fie inspirat din fapte reale ?
+                <button>
+                    <text>Sa fie inspirat</text>
+                    <postback>sa fie inspirat</postback>
+                </button>
+                <button>
+                    <text>Sa nu fie inspirat</text>
+                    <postback>sa nu fie inspirat</postback>
+                </button>
+  
+                <think>
+                    <set name = "topic">daamodernSlasherthrill</set>
+                </think>
+                <think>
+                    <set name="tip">nuumodernSlasherthrill</set>
+                </think>
+            </template>
+        </category>       
+        
+        
+        <topic name ="daclasicSlasherthrill">
+        <category>
+            <pattern>sa fie</pattern>
+            <template>
+                
+                <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Psycho</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Psycho_%281960%29_theatrical_poster_%28retouched%29.jpg/800px-Psycho_%281960%29_theatrical_poster_%28retouched%29.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt0054215/?ref_=nv_sr_srsg_3</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                    <card>
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Scream</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/7/78/Scream_movie_poster.jpg</image>
+                      <button>
+                        <text>Mai multe detalii</text>
+                        <url>https://www.imdb.com/title/tt0117571/?ref_=nv_sr_srsg_1</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                  </carousel> 
+                 
+            </template>
+            
+            </category>
+            
+            <topic name ="daaclasicSlasherthrill">
+             <category>
+            <pattern>sa fie</pattern>
+            <template>
+                
+                <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Halloween</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/ro/8/87/Halloween_cover.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt0077651/?ref_=nv_sr_srsg_7</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                    <card>
+                      <title>Iti recomand filmul</title>
+                      <subtitle>The Texas Chain Saw Massacre</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/ro/8/8d/TheTexasChainSawMassacre.jpg</image>
+                      <button>
+                        <text>Mai multe detalii</text>
+                        <url>https://www.imdb.com/title/tt0072271/?ref_=nv_sr_srsg_2</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                  </carousel> 
+                  </template>
+                  </category>
+            
+            
+            
+            <topic name ="daclasicSlasherthrill">
+            <category>
+            <pattern>sa nu fie</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>I know what you did last summer</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/a/a2/I_Know_What_You_Did_Last_Summer.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt0119345/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                    <card>
+                      <title>Iti recomand filmul</title>
+                      <subtitle>A Clockwork Orange</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/7/73/A_Clockwork_Orange_%281971%29.png</image>
+                      <button>
+                        <text>Mai multe detalii</text>
+                        <url>https://www.imdb.com/title/tt0066921/?ref_=nv_sr_srsg_3</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                  </carousel>                
+                
+            </template>
+            
+            </category>
+            
+            <topic name ="daaclasicSlasherthrill">
+            <category>
+            <pattern>sa nu fie</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Candyman</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/8/89/Candymanposter.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt0103919/?ref_=nv_sr_srsg_3</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                    <card>
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Friday the 13th</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/2/2c/Friday_the_13th_%281980%29_theatrical_poster.jpg</image>
+                      <button>
+                        <text>Mai multe detalii</text>
+                        <url>https://www.imdb.com/title/tt0080761/?ref_=nv_sr_srsg_3</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                    <card>
+                      <title>Iti recomand filmul</title>
+                      <subtitle>A Nightmare on Elm Street</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/f/fa/A_Nightmare_on_Elm_Street_%281984%29_theatrical_poster.jpg</image>
+                      <button>
+                        <text>Mai multe detalii</text>
+                        <url>https://www.imdb.com/title/tt0087800/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                  </carousel>                
+                
+            </template>
+            
+            </category>
+            
+        <topic name ="damodernSlasherthrill">
+        <category>
+            <pattern>sa fie inspirat</pattern>
+            <template>
+                 
+                  <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>American Psycho</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/0/0c/American_Psycho.png</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt0144084/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                    <card>
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Sweeney Todd: The Demon Barber of Fleet Street</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/4/4b/Sweeneylarge.jpg</image>
+                      <button>
+                        <text>Mai multe detalii</text>
+                        <url>https://www.imdb.com/title/tt0408236/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                        <text>Asi dori un alt film</text>
+                        <postback>da</postback>
+                    </button> 
+                    </card>
+                  </carousel>
+                  
+                
+ 
+            
+            </template>
+            
+            </category>
+            
+            <topic name ="daamodernSlasherthrill">
+        <category>
+            <pattern>sa fie inspirat</pattern>
+            <template>
+                 
+                  <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Halloween</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/b/b1/Halloween_%282018%29_poster.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt1502407/?ref_=nv_sr_srsg_8</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                    <card>
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Leatherface</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/f/fc/Leatherface_final_one-sheet_poster.jpg</image>
+                      <button>
+                        <text>Mai multe detalii</text>
+                        <url>https://www.imdb.com/title/tt2620590/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                        <text>Asi dori un alt film</text>
+                        <postback>da</postback>
+                    </button> 
+                    </card>
+                  </carousel>
+                  
+                
+            
+            </template>
+            
+            </category>
+            
+        <topic name ="damodernSlasherthrill">
+        <category>
+            <pattern>sa nu fie inspirat</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>The house that jack build</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/4/4c/The_House_That_Jack_Built.png</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt4003440/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                    <card>
+                      <title>Iti recomand filmul</title>
+                      <subtitle>You're next</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/c/c2/YoureNext2011Film.jpg</image>
+                      <button>
+                        <text>Mai multe detalii</text>
+                        <url>https://www.imdb.com/title/tt1853739/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                  </carousel>
+                  
+            </template>
+            
+            </category>
+            
+            <topic name ="daamodernSlasherthrill">
+        <category>
+            <pattern>sa nu fie inspirat</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>It</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/5/5a/It_%282017%29_poster.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt1396484/?ref_=nv_sr_srsg_6</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                    <card>
+                      <title>Iti recomand filmul</title>
+                      <subtitle>It Chapter Two</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/8/88/ItChapterTwoTeaser.jpg</image>
+                      <button>
+                        <text>Mai multe detalii</text>
+                        <url>https://www.imdb.com/title/tt7349950/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                  </carousel>
+                  
+            </template>
+            
+            </category>
+    
+    <!-- Splatter -->        
+    
+    <topic name = "slasher">
+        
+        <category>
+            <pattern>Splatter</pattern>
+            <template>Filmul sa fie clasic sau modern ?
+                <button>
+                    <text>Clasic</text>
+                    <postback>clasic</postback>
+                </button>
+                <button>
+                    <text>Modern</text>
+                    <postback>modern</postback>
+                </button>
+
+                <think>
+                    <set name = "topic">Splatter</set>
+                </think>
+                <think>
+                    <set name="tip">Splater</set>
+                </think>
+            </template>
+        </category>
+        
+        <topic name ="Splatter">
+        <category>
+            <pattern>Clasic</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>SAW</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/ro/5/56/Saw_official_poster.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt0387564/?ref_=nv_sr_srsg_3</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                    <card>
+                      <title>Iti recomand filmul</title>
+                      <subtitle>The Evil Dead</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/7/7d/Evil_dead_ver1.jpg</image>
+                      <button>
+                        <text>Mai multe detalii</text>
+                        <url>https://www.imdb.com/title/tt0083907/?ref_=nv_sr_srsg_3</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                  </carousel>
+                  
+            </template>
+            
+            </category>
+            
+        <topic name ="Splatter">
+        <category>
+            <pattern>Modern</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>The Devil's Rejects</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/d/d6/Devils_rejects_ver2.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt0395584/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                    <card>
+                      <title>Iti recomand filmul</title>
+                      <subtitle>I Spit on Your Grave</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/8/8d/I_Spit_on_your_Grave.jpg</image>
+                      <button>
+                        <text>Mai multe detalii</text>
+                        <url>https://www.imdb.com/title/tt1242432/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                  </carousel>
+                  
+            </template>
+            
+            </category>
+            
+    <!-- Thrill -->  
+    
+     <topic name = "slasher">
+        
+        <category>
+            <pattern>thriller</pattern>
+            <template>Filmul sa fie inspirat din fapte reale ?
+                <button>
+                    <text>Sa fie inspirat</text>
+                    <postback>sa fie inspirat</postback>
+                </button>
+                <button>
+                    <text>Sa nu fie inspirat</text>
+                    <postback>sa nu fie inspirat</postback>
+                </button>
+
+                <think>
+                    <set name = "topic">HorrorThrillers</set>
+                </think>
+                <think>
+                    <set name="tip">HorrorThrillers</set>
+                </think>
+            </template>
+        </category>
+        
+        
+         <topic name ="HorrorThrillers">
+        <category>
+            <pattern>sa fie inspirat </pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>The Silence of the Lambs</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/ro/8/86/The_Silence_of_the_Lambs_poster.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt0102926/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                    <card>
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Hanibal</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/9/9b/Hannibal_movie_poster.jpg</image>
+                      <button>
+                        <text>Mai multe detalii</text>
+                        <url>https://www.imdb.com/title/tt0212985/?ref_=nv_sr_srsg_3</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                     <card>
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Red Dragon</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/b/bd/Red_Dragon_movie.jpg</image>
+                      <button>
+                        <text>Mai multe detalii</text>
+                        <url>https://www.imdb.com/title/tt0289765/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                  </carousel>
+                  
+            </template>
+            
+            </category>
+            
+        <topic name ="HorrorThrillers">
+        <category>
+            <pattern>sa nu fie inspirat </pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Hush</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/e/e3/Hush_2016_poster.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt5022702/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                    <card>
+                      <title>Iti recomand filmul</title>
+                      <subtitle>El hoyo(The Platform)</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/5/54/The_Platform_poster.jpg</image>
+                      <button>
+                        <text>Mai multe detalii</text>
+                        <url>https://www.imdb.com/title/tt8228288/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                  </carousel>
+                  
+            </template>
+            
+            </category>
+    
+    
+</topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic>
+</topic></topic></topic>   
+
+</aiml>

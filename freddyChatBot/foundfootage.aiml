@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+        <pattern>found footage horror</pattern>
+        <template>Ce categorie de film found-footage ai dori sa vezi ?
+            <button>
+                <text>Reportaj</text>
+                <postback>reportaj</postback>
+            </button>
+            <button>
+                <text>First Person</text>
+                <postback>firstperson</postback>
+            </button>
+
+            <think>
+                <set name = "topic">ffh</set>
+            </think>
+            <think>
+                <set name="categorie">foundfootage</set>
+            </think>
+        </template>
+    </category>	
+    
+<!-- Reportaj -->     
+
+ <topic name = "ffh">
+        
+        <category>
+            <pattern>Reportaj</pattern>
+            <template>Vrei ca filmul sa fie inspirat din fapte reale ?
+                <button>
+                    <text>Sa fie inspirat</text>
+                    <postback>sa fie inspirat</postback>
+                </button>
+                <button>
+                    <text>Sa nu fie inspirat</text>
+                    <postback>sa nu fie inspirat</postback>
+                </button>
+
+                <think>
+                    <set name = "topic">reportaj</set>
+                </think>
+                <think>
+                    <set name="tip">Rep</set>
+                </think>
+            </template>
+        </category>
+
+ <topic name = "reportaj">
+            
+            <category>
+            <pattern>sa fie inspirat</pattern>
+            <template>
+                
+                <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>The Poughkeepsie Tapes</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/6/69/Poughkeepsie_tapes_post.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt1010271/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                    <card>
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Creep</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/5/56/Creep_%282014_film%29_poster.jpg</image>
+                      <button>
+                        <text>Mai multe detalii</text>
+                        <url>https://www.imdb.com/title/tt2428170/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                  </carousel> 
+                 
+            </template>
+            
+            </category>  
+            
+ <topic name = "reportaj">
+        
+        <category>
+            <pattern>sa nu fie inspirat</pattern>
+            <template>Vrei ca filmul sa fie despre ?
+                <button>
+                    <text>Virus</text>
+                    <postback>virus</postback>
+                </button>
+                <button>
+                    <text>Paranormal</text>
+                    <postback>paranormal</postback>
+                </button>
+                <button>
+                    <text>Investigatie</text>
+                    <postback>investigatie</postback>
+                </button>
+                <think>
+                    <set name = "topic">sanufie</set>
+                </think>
+                <think>
+                    <set name="tip">sanuff</set>
+                </think>
+            </template>
+        </category>
+        
+        <topic name = "sanufie">
+            
+            <category>
+            <pattern>virus</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>[Rec]</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/4/4b/Rec_poster.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt1038988/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>
+            
+        <topic name = "sanufie">
+            
+            <category>
+            <pattern>paranormal</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Paranormal Activity</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/5/54/Paranormal_Activity_poster.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt1179904/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>
+
+        <topic name = "sanufie">
+            
+            <category>
+            <pattern>investigatie</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Trolljegeren</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/1/1e/TrollHunter.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt1740707/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>
+            
+ <topic name = "ffh">
+        
+        <category>
+            <pattern>firstperson</pattern>
+            <template>Vrei ca filmul sa fie tip documentar  ?
+                <button>
+                    <text>Sa fie documentar</text>
+                    <postback>sa fie documentar</postback>
+                </button>
+                <button>
+                    <text>Sa nu fie documentar</text>
+                    <postback>sa nu fie documentar</postback>
+                </button>
+
+                <think>
+                    <set name = "topic">firstp</set>
+                </think>
+                <think>
+                    <set name="tip">fp</set>
+                </think>
+            </template>
+        </category>
+
+<topic name = "firstp">
+            
+            <category>
+            <pattern>sa fie documentar</pattern>
+            <template>
+                
+                <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>The Blair Witch Project</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/2/26/Blair_Witch_Project.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt0185937/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                    <card>
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Blair Witch</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/2/2a/Blair_Witch_2016_poster.png</image>
+                      <button>
+                        <text>Mai multe detalii</text>
+                        <url>https://www.imdb.com/title/tt1540011/?ref_=nv_sr_srsg_3</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                  </carousel> 
+                 
+            </template>
+            
+            </category>  
+
+ <topic name = "firstp">
+        
+        <category>
+            <pattern>sa nu fie documentar</pattern>
+            <template>Vrei ca filmul sa fie despre un virus, chat sau o atac monstru ?
+                <button>
+                    <text>Virus</text>
+                    <postback>virus</postback>
+                </button>
+                <button>
+                    <text>Chat</text>
+                    <postback>chat</postback>
+                </button>
+                <button>
+                    <text>Atac monstru</text>
+                    <postback>atacmonstru</postback>
+                </button>
+                <think>
+                    <set name = "topic">sanufied</set>
+                </think>
+                <think>
+                    <set name="tip">sanuffd</set>
+                </think>
+            </template>
+        </category>   
+        
+        <topic name = "sanufied">
+            
+            <category>
+            <pattern>virus</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Quarantine</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/b/bd/Quarantineposter.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt1082868/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>
+            
+        <topic name = "sanufied">
+            
+            <category>
+            <pattern>chat</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Unfriended</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/2/2e/Unfriended_2015_teaser_poster.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt3713166/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>    
+            
+        <topic name = "sanufied">
+            
+            <category>
+            <pattern>atacmonstru</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Cloverfield </subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/f/f1/Cloverfield_theatrical_poster.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt1060277/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category> 
+            
+</topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic>      
+    
+</aiml>

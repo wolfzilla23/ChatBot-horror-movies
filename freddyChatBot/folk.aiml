@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	
+	<category>
+        <pattern>folk horror</pattern>
+        <template>Ce categorie de film folk horror ai dori sa vezi ?
+            <button>
+                <text>Cult</text>
+                <postback>cult</postback>
+            </button>
+            <button>
+                <text>Supernatural</text>
+                <postback>supernatural</postback>
+            </button>
+
+            <think>
+                <set name = "topic">folk</set>
+            </think>
+            <think>
+                <set name="categorie">folkk</set>
+            </think>
+        </template>
+    </category>	
+    
+<!-- Cult --> 
+    
+ <topic name = "folk">
+        
+        <category>
+            <pattern>cult</pattern>
+            <template>Ce vrei sa contina filmul ?
+                <button>
+                    <text>Religie</text>
+                    <postback>religie</postback>
+                </button>
+                <button>
+                    <text>Vrajitoare</text>
+                    <postback>vrajitoare</postback>
+                </button>
+                <button>
+                    <text>Tragedie</text>
+                    <postback>tragedie</postback>
+                </button>
+                <button>
+                    <text>Cult Real</text>
+                    <postback>cultreal</postback>
+                </button>
+                <button>
+                    <text>Legenda urbana</text>
+                    <postback>legendaurbana</postback>
+                </button> 
+                <button>
+                    <text>Petrecere</text>
+                    <postback>petrecere</postback>
+                </button>
+                <button>
+                    <text>Ritual</text>
+                    <postback>ritual</postback>
+                </button>
+                <button>
+                    <text>Psihologic</text>
+                    <postback>psihologic</postback>
+                </button>
+                <think>
+                    <set name = "topic">folkcat</set>
+                </think>
+                <think>
+                    <set name="tip">flkc</set>
+                </think>
+            </template>
+        </category>    
+
+ <topic name = "folkcat">
+        
+        <category>
+            <pattern>religie</pattern>
+            <template>Premiza sa fie ?
+                <button>
+                    <text>Salvare</text>
+                    <postback>salvare</postback>
+                </button>
+                <button>
+                    <text>Cautare</text>
+                    <postback>cautare</postback>
+                </button>
+
+                <think>
+                    <set name = "topic">religios</set>
+                </think>
+                <think>
+                    <set name="tip">Relig</set>
+                </think>
+            </template>
+        </category>        
+
+        <topic name = "religios">
+            
+            <category>
+            <pattern>salvare</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Apostle</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/5/5c/Apostle_poster.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt6217306/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>
+
+        <topic name = "religios">
+            
+            <category>
+            <pattern>cautare</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>The Wicker Man</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/1/11/The_Wicker_Man_%281973_film%29_UK_poster.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt0070917/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>
+            
+        <topic name = "folkcat">
+            
+            <category>
+            <pattern>vrajitoare</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>The VVitch: A New-England Folktale</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/b/bf/The_Witch_poster.png</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt4263482/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>
+            
+        <topic name = "folkcat">
+            
+            <category>
+            <pattern>tragedie</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Hereditary</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/d/d9/Hereditary.png</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt7784604/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>
+
+        <topic name = "folkcat">
+            
+            <category>
+            <pattern>cultreal</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Midsommar</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/4/47/Midsommar_%282019_film_poster%29.png</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt8772262/?ref_=nv_sr_srsg_3</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>   
+            
+        <topic name = "folkcat">
+            
+            <category>
+            <pattern>legendaurbana</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>The Endless</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/4/43/The_Endless.png</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt3986820/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                     <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>The Ritual</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/f/ff/The_Ritual_UK_poster.png</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt5638642/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                    
+                </carousel> 
+            </template>
+            </category>  
+            
+        <topic name = "folkcat">
+            
+            <category>
+            <pattern>petrecere</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>The Invitation</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/f/f3/The_Invitation_%282015_film%29_POSTER.png</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt2400463/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>  
+            
+        <topic name = "folkcat">
+            
+            <category>
+            <pattern>ritual</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>We Summon the Darkness</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/5/5d/We_Summon_the_Darkness_film_poster.png</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt8058874/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                     <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Kill List</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/7/78/Kill-list-poster.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt1788391/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                    
+                </carousel> 
+            </template>
+            </category>
+ 
+        <topic name = "folkcat">
+            
+            <category>
+            <pattern>psihologic</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>The Lodge</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/c/cf/The_Lodge_poster.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt7347846/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                     <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Mother!</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/9/94/Mother%212017.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt5109784/?ref_=nv_sr_srsg_6</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                    
+                </carousel> 
+            </template>
+            </category>            
+
+<!-- Supranatural --> 
+
+<topic name = "folk">
+        
+        <category>
+            <pattern>supernatural</pattern>
+            <template>Ce element supernatural sa contina filmul ?
+                <button>
+                    <text>Fantome</text>
+                    <postback>fantome</postback>
+                </button>
+                <button>
+                    <text>Vampiri</text>
+                    <postback>vampiri</postback>
+                </button>
+                <button>
+                    <text>Zombie</text>
+                    <postback>zombie</postback>
+                </button>
+
+                <think>
+                    <set name = "topic">folksup</set>
+                </think>
+                <think>
+                    <set name="tip">flks</set>
+                </think>
+            </template>
+        </category>   
+        
+<topic name = "folksup">
+        
+        <category>
+            <pattern>fantome</pattern>
+            <template>Filmul sa fie ?
+                <button>
+                    <text>Inspirat din realitate</text>
+                    <postback>inspirat</postback>
+                </button>
+                <button>
+                    <text>Jump Scare</text>
+                    <postback>jumpscare</postback>
+                </button>
+                <button>
+                    <text>Mister</text>
+                    <postback>mister</postback>
+                </button>
+                <button>
+                    <text>Psihologic</text>
+                    <postback>psihologic</postback>
+                </button>
+                <think>
+                    <set name = "topic">folkfant</set>
+                </think>
+                <think>
+                    <set name="tip">flkfant</set>
+                </think>
+            </template>
+        </category>  
+
+<topic name = "folkfant">
+        
+        <category>
+            <pattern>inspirat</pattern>
+            <template>Ce serie doresti ?
+                <button>
+                    <text>Serie Principala</text>
+                    <postback>serie principala</postback>
+                </button>
+                <button>
+                    <text>Serie Secundara</text>
+                    <postback>serie secundara</postback>
+                </button>
+                <think>
+                    <set name = "topic">folkfantinsp</set>
+                </think>
+                <think>
+                    <set name="tip">flkfaninspt</set>
+                </think>
+            </template>
+        </category>  
+
+<topic name = "folkfantinsp">
+            
+            <category>
+            <pattern>serie principala</pattern>
+            <template>
+                
+                <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>The Conjuring</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/1/1f/Conjuring_poster.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt1457767/?ref_=nv_sr_srsg_3</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                    <card>
+                      <title>Iti recomand filmul</title>
+                      <subtitle>The Conjuring 2</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/b/b9/Conjuring_2.jpg</image>
+                      <button>
+                        <text>Mai multe detalii</text>
+                        <url>https://www.imdb.com/title/tt3065204/?ref_=nv_sr_srsg_6</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                  </carousel> 
+                 
+            </template>
+            
+            </category> 
+            
+<topic name = "folkfantinsp">
+            
+            <category>
+            <pattern>serie secundara</pattern>
+            <template>
+                
+                <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>The Nun</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/3/34/TheNunPoster.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt5814060/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                    <card>
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Annabelle Comes Home</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/5/50/AnnabelleComesHomePoster.jpg</image>
+                      <button>
+                        <text>Mai multe detalii</text>
+                        <url>https://www.imdb.com/title/tt8350360/?ref_=tt_sims_tt</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                  </carousel> 
+                 
+            </template>
+            
+            </category> 
+            
+        <topic name = "folkfant">
+            
+            <category>
+            <pattern>jumpscare</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Insidious</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/2/2d/Insidious_poster.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt1591095/?ref_=tt_sims_tt</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>  
+            
+        <topic name = "folkfant">
+            
+            <category>
+            <pattern>mister</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>The Autopsy of Jane Doe</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/4/47/The_Autopsy_of_Jane_Doe.jpeg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt3289956/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>
+            
+        <topic name = "folkfant">
+            
+            <category>
+            <pattern>psihologic</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>A Ghost Story</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/d/dd/A_Ghost_Story_poster.jpeg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt6265828/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>
+            
+<topic name = "folksup">
+        
+        <category>
+            <pattern>vampiri</pattern>
+            <template>Filmul sa fie ?
+                <button>
+                    <text>Modern</text>
+                    <postback>modern</postback>
+                </button>
+                <button>
+                    <text>Clasic</text>
+                    <postback>clasic</postback>
+                </button>
+                <think>
+                    <set name = "topic">folkvamp</set>
+                </think>
+                <think>
+                    <set name="tip">flkvamp</set>
+                </think>
+            </template>
+        </category> 
+        
+<topic name = "folkvamp">
+            
+            <category>
+            <pattern>modern</pattern>
+            <template>
+                
+                <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>A Girl Walks Home Alone at Night</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/5/56/A_Girl_Walks_Home_Alone_at_Night_%28poster%29.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt2326554/?ref_=nv_sr_srsg_4</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                    <card>
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Fright Night</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/9/9b/FrightNight2011Poster.jpg</image>
+                      <button>
+                        <text>Mai multe detalii</text>
+                        <url>https://www.imdb.com/title/tt1438176/?ref_=nv_sr_srsg_3</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                  </carousel> 
+                 
+            </template>
+            
+            </category> 
+            
+        <topic name = "folkvamp">
+            
+            <category>
+            <pattern>clasic</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Låt den rätte komma in</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/c/c9/Let_the_Right_One_In_%28Swedish%29.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt1139797/?ref_=nv_sr_srsg_3</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>
+            
+<topic name = "folksup">
+        
+        <category>
+            <pattern>zombie</pattern>
+            <template>Tema filmului sa fie ?
+                <button>
+                    <text>Apocalipsa</text>
+                    <postback>apocalipsa</postback>
+                </button>
+                <button>
+                    <text>Infectie</text>
+                    <postback>infectie</postback>
+                </button>
+                <button>
+                    <text>Mister</text>
+                    <postback>mister</postback>
+                </button>
+                <think>
+                    <set name = "topic">folkzomb</set>
+                </think>
+                <think>
+                    <set name="tip">flkzomb</set>
+                </think>
+            </template>
+        </category> 
+
+<topic name = "folkzomb">
+            
+            <category>
+            <pattern>apocalipsa</pattern>
+            <template>
+                
+                <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>World War Z</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/d/dc/World_War_Z_poster.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt0816711/?ref_=nv_sr_srsg_5</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                    <card>
+                      <title>Iti recomand filmul</title>
+                      <subtitle>I Am Legend</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/d/df/I_am_legend_teaser.jpg</image>
+                      <button>
+                        <text>Mai multe detalii</text>
+                        <url>https://www.imdb.com/title/tt0480249/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                  </carousel> 
+                 
+            </template>
+            
+            </category> 
+
+        <topic name = "folkzomb">
+            
+            <category>
+            <pattern>infectie</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>The Girl with All the Gifts</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/c/c7/The_Girl_with_All_the_Gifts_poster.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt4547056/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>     
+            
+        <topic name = "folkzomb">
+            
+            <category>
+            <pattern>mister</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Open Grave</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/d/d0/Open_Grave.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt2071550/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category> 
+
+</topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic>
+</topic></topic></topic></topic></topic></topic>
+
+</aiml>

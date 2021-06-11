@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+		<category>
+        <pattern>comedy horror</pattern>
+        <template>Ce categorie de film comedy-horror ai dori sa vezi ?
+            <button>
+                <text>Parodie</text>
+                <postback>parodie</postback>
+            </button>
+            <button>
+                <text>Original</text>
+                <postback>original</postback>
+            </button>
+
+            <think>
+                <set name = "topic">comedy</set>
+            </think>
+            <think>
+                <set name="categorie">comedyy</set>
+            </think>
+        </template>
+    </category>
+    
+		<category>
+        <pattern>parodie</pattern>
+        <template>Parodie dupa ?
+            <button>
+                <text>Filme</text>
+                <postback>filme</postback>
+            </button>
+            <button>
+                <text>Fricile societatii</text>
+                <postback>fricile societatii</postback>
+            </button>
+
+            <think>
+                <set name = "topic">comedyparody</set>
+            </think>
+            <think>
+                <set name="categorie">comedyyp</set>
+            </think>
+        </template>
+    </category>
+    
+		<category>
+        <pattern>original</pattern>
+        <template>Premisa filmului sa fie?
+            <button>
+                <text>Legenda de Craciun</text>
+                <postback>legenda de craciun</postback>
+            </button>
+            <button>
+                <text>Excursie</text>
+                <postback>excursie</postback>
+            </button>
+            <button>
+                <text>Cult</text>
+                <postback>cult</postback>
+            </button>
+            <button>
+                <text>Apocalipsa Zombie</text>
+                <postback>apocalipsa zombie</postback>
+            </button>
+            <button>
+                <text>Halloween</text>
+                <postback>halloween</postback>
+            </button>
+            <button>
+                <text>Mutilare</text>
+                <postback>mutilare</postback>
+            </button>
+
+            <think>
+                <set name = "topic">comedyoriginal</set>
+            </think>
+            <think>
+                <set name="categorie">comedyyo</set>
+            </think>
+        </template>
+    </category>
+    
+		<category>
+        <pattern>filme</pattern>
+        <template>Filmul sa fie cu ?
+            <button>
+                <text>Fantome</text>
+                <postback>fantome</postback>
+            </button>
+            <button>
+                <text>Obiecte Blestemate</text>
+                <postback>obiecte blestemate</postback>
+            </button>
+            <button>
+                <text>Criminali in serie</text>
+                <postback>criminali in serie</postback>
+            </button>
+            <button>
+                <text>Dupa mai multe filme</text>
+                <postback>mai multe filme</postback>
+            </button>
+            <think>
+                <set name = "topic">comedyparodyf</set>
+            </think>
+            <think>
+                <set name="categorie">comedyypf</set>
+            </think>
+        </template>
+    </category>
+    
+        <topic name = "comedyparodyf">
+            
+            <category>
+            <pattern>fantome</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>A Haunted House</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/0/00/A_Haunted_House_Poster.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt2243537/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>
+
+        <topic name = "comedyparodyf">
+            
+            <category>
+            <pattern>obiecte blestemate</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>You Might Be the Killer</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/0/0d/You_Might_Be_the_Killer_poster.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt8998472/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category> 
+
+        <topic name = "comedyparodyf">
+            
+            <category>
+            <pattern>criminali in serie</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>The Final Girls</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/c/c8/The_Final_Girls_poster.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt2118624/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category> 
+            
+        <topic name = "comedyparodyf">
+            
+            <category>
+            <pattern>mai multe filme</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Scary Movie</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/2/29/Movie_poster_for_%22Scary_Movie%22.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt0175142/?ref_=nv_sr_srsg_1</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category> 
+            
+        <topic name = "comedyparody">
+            
+            <category>
+            <pattern>fricile societatii</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>The Cabin in the Woods</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/8/84/The_Cabin_in_the_Woods_%282012%29_theatrical_poster.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt1259521/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category> 
+            
+   
+        <topic name = "comedyoriginal">
+            
+            <category>
+            <pattern>legenda de craciun</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Krampus</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/1/1e/Krampus_poster.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt3850590/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>   
+            
+        <topic name = "comedyoriginal">
+            
+            <category>
+            <pattern>excursie</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Tucker and Dale vs Evil</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/c/cb/Tucker-and-dale-vs-evil.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt1465522/?ref_=nv_sr_srsg_7</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>   
+            
+        <topic name = "comedyoriginal">
+            
+            <category>
+            <pattern>cult</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>The Babysitter</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/2/29/The_Babysitter_%282017_film%29.png</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt4225622/?ref_=nv_sr_srsg_2</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>  
+            
+        <topic name = "comedyoriginal">
+            
+            <category>
+            <pattern>apocalipsa zombie</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Zombieland</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/a/a3/Zombieland-poster.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt1156398/?ref_=nv_sr_srsg_3</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                     <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Shaun of the Dead</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/8/8d/Shaun_of_the_Dead_film_poster.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt0365748/?ref_=nv_sr_srsg_5</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                    
+                </carousel> 
+            </template>
+            </category>  
+            
+        <topic name = "comedyoriginal">
+            
+            <category>
+            <pattern>halloween</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Trick 'r Treat</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/d/dc/Trick_r_treat.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt0862856/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>  
+            
+        <topic name = "comedyoriginal">
+            
+            <category>
+            <pattern>mutilare</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Tusk</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/4/44/Tusk_%282014_film%29_poster.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt3099498/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category> 
+           
+</topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic>
+    
+</aiml>

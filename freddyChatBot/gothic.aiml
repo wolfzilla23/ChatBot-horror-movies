@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<category>
+        <pattern>gothic horror</pattern>
+        <template>Ce categorie de film gothic-horror ai dori sa vezi ?
+            <button>
+                <text>Supranatural</text>
+                <postback>supranatural</postback>
+            </button>
+            <button>
+                <text>Elemente de cosmar</text>
+                <postback>elementedecosmar</postback>
+            </button>
+
+            <think>
+                <set name = "topic">gothic</set>
+            </think>
+            <think>
+                <set name="categorie">goth</set>
+            </think>
+        </template>
+    </category>	
+    
+    <!-- Supranatural -->     
+    
+     <topic name = "gothic">
+        
+        <category>
+            <pattern>Supranatural</pattern>
+            <template>In film sa apara fantome sau vampiri ?
+                <button>
+                    <text>Fantome</text>
+                    <postback>fantome</postback>
+                </button>
+                <button>
+                    <text>Vampiri</text>
+                    <postback>vampiri</postback>
+                </button>
+
+                <think>
+                    <set name = "topic">supranaturalt</set>
+                </think>
+                <think>
+                    <set name="tip">snatural</set>
+                </think>
+            </template>
+        </category>
+
+    <!-- Fantome -->
+        
+     <topic name = "supranaturalt">
+        
+        <category>
+            <pattern>Fantome</pattern>
+            <template>Filmul sa fie: Case bantuite sau Musical ?
+                <button>
+                    <text>Case bantuite</text>
+                    <postback>case bantuite</postback>
+                </button>
+                <button>
+                    <text>Musical</text>
+                    <postback>musical</postback>
+                </button>
+
+                <think>
+                    <set name = "topic">supranaturalt1</set>
+                </think>
+                <think>
+                    <set name="tip">snatural1</set>
+                </think>
+            </template>
+        </category>
+
+     <topic name = "supranaturalt1">
+        
+        <category>
+            <pattern>Case bantuite</pattern>
+            <template>Filmul sa fie?
+                <button>
+                    <text>Casa bantuita</text>
+                    <postback>casa bantuita</postback>
+                </button>
+                <button>
+                    <text>Mister</text>
+                    <postback>mister</postback>
+                </button>
+                <button>
+                    <text>Incurcat</text>
+                    <postback>incurcat</postback>
+                </button>
+                <button>
+                    <text>Tragic</text>
+                    <postback>tragic</postback>
+                </button>
+                <think>
+                    <set name = "topic">supranaturalt2</set>
+                </think>
+                <think>
+                    <set name="tip">snatural2</set>
+                </think>
+            </template>
+        </category>
+        
+        <topic name = "supranaturalt2">
+            
+            <category>
+            <pattern>casa bantuita</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>The Haunting</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/b/ba/The_Haunting_film.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt0171363/?ref_=nv_sr_srsg_7</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>  
+            
+        <topic name = "supranaturalt2">
+            
+            <category>
+            <pattern>mister</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>The Woman in Black</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/ro/5/5e/Poster_Femeia_in_negru.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt1596365/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>
+            
+        <topic name = "supranaturalt2">
+            
+            <category>
+            <pattern>incurcat</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>The Others</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/4/4c/TheOthers.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt0230600/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>
+            
+        <topic name = "supranaturalt2">
+            
+            <category>
+            <pattern>tragic</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Crimson Peak</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/ro/a/ad/Crimson_Peak_theatrical_poster.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt2554274/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>
+            
+        <topic name = "supranaturalt1">
+            
+            <category>
+            <pattern>musical</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>The Phantom of the Opera</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/d/d5/Phantom_of_the_opera_poster.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt0098090/?ref_=nv_sr_srsg_6</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>  
+            
+    <!-- Vampiri -->
+    
+<topic name = "supranaturalt">
+        
+        <category>
+            <pattern>Vampiri</pattern>
+            <template>Filmul sa fie clasic sau modern ?
+                <button>
+                    <text>Clasice</text>
+                    <postback>clasice</postback>
+                </button>
+                <button>
+                    <text>Moderne</text>
+                    <postback>moderne</postback>
+                </button>
+
+                <think>
+                    <set name = "topic">vampirit</set>
+                </think>
+                <think>
+                    <set name="tip">vampirr</set>
+                </think>
+            </template>
+        </category> 
+        
+        <topic name = "vampirit">
+            
+            <category>
+            <pattern>clasice</pattern>
+            <template>
+                
+                <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Dracula</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Dracula_movie_poster_Style_F.jpg/800px-Dracula_movie_poster_Style_F.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt0021814/?ref_=nv_sr_srsg_10</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                    <card>
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Nosferatu: Phantom der Nacht</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/9/95/Nosferatu_Phantom_der_Nacht.jpg</image>
+                      <button>
+                        <text>Mai multe detalii</text>
+                        <url>https://www.imdb.com/title/tt0079641/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                  </carousel> 
+                 
+            </template>
+            
+            </category>
+
+        <topic name = "vampirit">
+            
+            <category>
+            <pattern>moderne</pattern>
+            <template>
+                
+                <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Interview with the Vampire: The Vampire Chronicles</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/f/fe/InterviewwithaVampireMoviePoste.JPG</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt0110148/?ref_=nv_sr_srsg_3</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button>  
+                </card>
+                </carousel>
+                </template>
+                </category>
+
+    <!-- Elemente de cosmar -->
+    
+ <topic name = "gothic">
+        
+        <category>
+            <pattern>elementedecosmar</pattern>
+            <template>In filmul sa fie despre un mister sau un blestem ?
+                <button>
+                    <text>Mister</text>
+                    <postback>mister</postback>
+                </button>
+                <button>
+                    <text>Blestem</text>
+                    <postback>blestem</postback>
+                </button>
+
+                <think>
+                    <set name = "topic">elementecosmar</set>
+                </think>
+                <think>
+                    <set name="tip">ecosmar</set>
+                </think>
+            </template>
+        </category>
+
+        <topic name = "elementecosmar">
+            
+            <category>
+            <pattern>mister</pattern>
+            <template>
+                
+                <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>The Eyes of My Mother</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/a/a4/The-eyes-of-my-mother-movie-poster-md.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt5225338/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                    <card>
+                      <title>Iti recomand filmul</title>
+                      <subtitle>The Skeleton Key</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/0/05/Skeleton_key.jpg</image>
+                      <button>
+                        <text>Mai multe detalii</text>
+                        <url>https://www.imdb.com/title/tt0397101/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                  </carousel> 
+                 
+            </template>
+            
+            </category>
+
+ <topic name = "elementecosmar">
+            
+            <category>
+            <pattern>blestem</pattern>
+            <template>
+                
+                <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>The Lodge</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/c/cf/The_Lodge_poster.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt7347846/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                    <card>
+                      <title>Iti recomand filmul</title>
+                      <subtitle>El orfanato</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/2/2d/Elorfanato.jpg</image>
+                      <button>
+                        <text>Mai multe detalii</text>
+                        <url>https://www.imdb.com/title/tt0464141/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                </button> 
+                    </card>
+                  </carousel> 
+                 
+            </template>
+            
+            </category>    
+    
+</topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic>          
+</aiml>

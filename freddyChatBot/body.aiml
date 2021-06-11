@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<category>
+        <pattern>body horror</pattern>
+        <template>Ce categorie de film body-horror ai dori sa vezi ?
+            <button>
+                <text>Boli</text>
+                <postback>boli</postback>
+            </button>
+            <button>
+                <text>Mutatii</text>
+                <postback>mutatii</postback>
+            </button>
+            <button>
+                <text>Mutilatii</text>
+                <postback>mutilatii</postback>
+            </button>
+            <button>
+                <text>Violenta extrema</text>
+                <postback>violenta extrema</postback>
+            </button>
+            <think>
+                <set name = "topic">body</set>
+            </think>
+            <think>
+                <set name="categorie">bodyy</set>
+            </think>
+        </template>
+    </category>
+
+	<category>
+        <pattern>boli</pattern>
+        <template>Ce sa contina filmul ?
+            <button>
+                <text>Virus mortal</text>
+                <postback>virus mortal</postback>
+            </button>
+            <button>
+                <text>Blestem</text>
+                <postback>blestem</postback>
+            </button>
+            <button>
+                <text>Zombie</text>
+                <postback>zombie</postback>
+            </button>
+            <think>
+                <set name = "topic">bodyboli</set>
+            </think>
+            <think>
+                <set name="categorie">bodyb</set>
+            </think>
+        </template>
+    </category>    
+    
+	<category>
+        <pattern>mutatii</pattern>
+        <template>Ce sa contina filmul ?
+            <button>
+                <text>Oameni mutanti</text>
+                <postback>oameni mutanti</postback>
+            </button>
+            <button>
+                <text>Monstru</text>
+                <postback>monstru</postback>
+            </button>
+            <think>
+                <set name = "topic">bodymutatii</set>
+            </think>
+            <think>
+                <set name="categorie">bodym</set>
+            </think>
+        </template>
+    </category>  
+
+	<category>
+        <pattern>mutilatii</pattern>
+        <template>Ce sa contina filmul ?
+            <button>
+                <text>Experiment</text>
+                <postback>experiment</postback>
+            </button>
+            <button>
+                <text>Western</text>
+                <postback>western</postback>
+            </button>
+            <button>
+                <text>Dementa</text>
+                <postback>dementa</postback>
+            </button>
+            <think>
+                <set name = "topic">bodymutilatii</set>
+            </think>
+            <think>
+                <set name="categorie">bodymutil</set>
+            </think>
+        </template>
+    </category>   
+    
+	<category>
+        <pattern>violenta extrema</pattern>
+        <template>Ce sa contina filmul ?
+            <button>
+                <text>Pornografie</text>
+                <postback>pornografie</postback>
+            </button>
+            <button>
+                <text>Sclavi</text>
+                <postback>sclavi</postback>
+            </button>
+            <button>
+                <text>Razbunare</text>
+                <postback>razbunare</postback>
+            </button>
+            <button>
+                <text>Psihologic</text>
+                <postback>psihologic</postback>
+            </button>
+            <button>
+                <text>Triade</text>
+                <postback>triade</postback>
+            </button>
+            <button>
+                <text>Triburi</text>
+                <postback>triburi</postback>
+            </button>
+            <think>
+                <set name = "topic">bodyviolenta</set>
+            </think>
+            <think>
+                <set name="categorie">bodyvio</set>
+            </think>
+        </template>
+    </category> 
+    
+        <topic name = "bodyboli">
+            
+            <category>
+            <pattern>virus mortal</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Pontypool</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/6/64/Pontypoolposter.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt1226681/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>
+            
+        <topic name = "bodyboli">
+            
+            <category>
+            <pattern>blestem</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>It Comes at Night</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/e/e9/It_Comes_at_Night.png</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt4695012/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>
+
+        <topic name = "bodyboli">
+            
+            <category>
+            <pattern>zombie</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>28 Days Later...</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/e/e4/28_days_later.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt0289043/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                     <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>I Am Legend</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/d/df/I_am_legend_teaser.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt0480249/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                    
+                </carousel> 
+            </template>
+            </category>  
+            
+        <topic name = "bodymutatii">
+            
+            <category>
+            <pattern>oameni mutanti</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Castle Freak</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/7/7e/CastleFreakposter.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt0112643/?ref_=nv_sr_srsg_3</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>
+            
+        <topic name = "bodymutatii">
+            
+            <category>
+            <pattern>monstru</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Cyst</subtitle>
+                      <image>https://m.media-amazon.com/images/M/MV5BNzU2NjQ3YzMtZmI3Yi00MWZhLWE4NTUtNzdiZjZmMDM4NWUyXkEyXkFqcGdeQXVyMTA0NzQyNTQy._V1_UY1200_CR98,0,630,1200_AL_.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt10611992/?ref_=tt_mv_close</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>
+            
+        <topic name = "bodymutilatii">
+            
+            <category>
+            <pattern>experiment</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>The Human Centipede</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/f/f1/Human-Centiped-poster.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt1467304/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>
+            
+        <topic name = "bodymutilatii">
+            
+            <category>
+            <pattern>western</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Bone Tomahawk</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/9/9c/Bone_Tomahawk_Poster.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt2494362/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>
+            
+        <topic name = "bodymutilatii">
+            
+            <category>
+            <pattern>dementa</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>À l'intérieur</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/4/47/Insideposter.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt0856288/</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>
+            
+        <topic name = "bodyviolenta">
+            
+            <category>
+            <pattern>pornografie</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Srpski film</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/d/de/Serbian-film-poster-325x460.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt1273235/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>
+            
+        <topic name = "bodyviolenta">
+            
+            <category>
+            <pattern>sclavi</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Salò o le 120 giornate di Sodoma</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/f/f3/Saloposter.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt0073650/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>
+
+        <topic name = "bodyviolenta">
+            
+            <category>
+            <pattern>razbunare</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Martyrs</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/d/da/Martyrs_tp01.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt1029234/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>
+
+        <topic name = "bodyviolenta">
+            
+            <category>
+            <pattern>psihologic</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>A Clockwork Orange</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/7/73/A_Clockwork_Orange_%281971%29.png</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt0066921/?ref_=nv_sr_srsg_3</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>
+            
+        <topic name = "bodyviolenta">
+            
+            <category>
+            <pattern>triade</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Ichi the Killer</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/8/8a/Ichithekillerposter.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt0296042/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>
+            
+        <topic name = "bodyviolenta">
+            
+            <category>
+            <pattern>triade</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Ichi the Killer</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/en/8/8a/Ichithekillerposter.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt0296042/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>
+            
+        <topic name = "bodyviolenta">
+            
+            <category>
+            <pattern>triburi</pattern>
+            <template>
+                
+                 <carousel>
+                    <card>
+                    
+                      <title>Iti recomand filmul</title>
+                      <subtitle>Cannibal Holocaust</subtitle>
+                      <image>https://upload.wikimedia.org/wikipedia/ro/1/11/Cannibal_Holocaust_movie.jpg</image>
+                      <button>
+                         <text>Mai multe detalii</text>
+                         <url>https://www.imdb.com/title/tt0078935/?ref_=nv_sr_srsg_0</url>
+                     </button>
+                     <button>
+                    <text>Asi dori un alt film</text>
+                    <postback>da</postback>
+                    </button> 
+                    </card>
+                </carousel> 
+            </template>
+            </category>
+
+
+</topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic></topic>
+
+</aiml>

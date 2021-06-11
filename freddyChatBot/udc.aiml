@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <!-- INTRODUCERE -->
+
+    <category>
+        <pattern>^ Buna ^</pattern>
+        
+        <template>
+            <delay>1</delay>
+        <image>https://media.giphy.com/media/PK7IAHdB0l9mg/giphy.gif</image>    
+        Salut.Eu sunt <bot name="name" /> si te voi ajuta sa gasesti o recomandare de film, 
+        <split/><delay>2</delay>Pe tine cum te cheama ?
+        </template>
+        
+    
+    </category>
+
+ <category>
+        <pattern> * </pattern>
+        <template>
+        <delay>1</delay>
+
+        <random>
+        <li><image>https://media.giphy.com/media/lpeNAjYt4nr6rGd4B2/giphy.gif</image></li>
+        <li><image>https://media.giphy.com/media/CSIzl30ynrub6/giphy.gif</image></li>
+        </random>
+        <delay>1.5</delay>
+        Nu stiu ce vrei sa imi spui, te rog incearca din nou
+
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>^ Salut ^</pattern>
+        <template>
+            <srai>^ Buna ^</srai>
+        </template>
+    </category>
+  
+    <category>
+        <pattern>^ Salutare ^</pattern>
+        <template>
+            <srai>^ Buna ^</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ Hello ^</pattern>
+        <template>
+            <srai>^ Buna ^</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ Hei ^</pattern>
+        <template>
+            <srai>^ Buna ^</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ Hi ^</pattern>
+        <template>
+            <srai>^ Buna ^</srai>
+        </template>
+    </category>
+  
+    <category>
+        <pattern>Ma cheama *</pattern>
+        <template>
+            <delay>1</delay>
+            Imi pare bine sa te cunosc, <set name="numeledoritorului">
+                <star />
+            </set>. <split/><delay>2</delay>Ai dori sa vezi un film horror ?
+            <button>
+                <text>Da</text>
+                <postback>Da</postback>
+            </button>
+            
+            <button>
+                <text>Nu</text>
+                <postback>Nu</postback>
+            </button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>Ma numesc * </pattern>
+        <template>
+            Imi pare bine sa te cunosc, <set name="numeledoritorului">
+                <star />
+            </set>.Ai dori sa vezi un film horror ?
+            <button>
+                <text>Da</text>
+                <postback>Da</postback>
+            </button>
+            
+            <button>
+                <text>Nu</text>
+                <postback>Nu</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Numele meu este * </pattern>
+        <template>
+            Imi pare bine sa te cunosc,<set name="numeledoritorului">
+                <star />
+            </set>.Ai dori sa vezi un film horror ?
+            <button>
+                <text>Da</text>
+                <postback>Da</postback>
+            </button>
+            
+            <button>
+                <text>Nu</text>
+                <postback>Nu</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Sunt * </pattern>
+        <template>
+            Imi pare bine sa te cunosc,<set name="numeledoritorului">
+                <star />
+            </set>.Ai dori sa vezi un film horror ?
+            <button>
+                <text>Da</text>
+                <postback>Da</postback>
+            </button>
+            
+            <button>
+                <text>Nu</text>
+                <postback>Nu</postback>
+            </button>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>^ Cine sunt ^</pattern>
+        <template>
+            <think>
+                <set var="identificanumeledoritorului">
+                    <get name="numeledoritorului" />
+                </set>
+            </think> 
+            <condition var="identificanumeledoritorului">
+                <li value="unknown">Nu stiu pentru ca nu ai spus cine esti.</li>
+                <li>Esti <get var="identificanumeledoritorului" />.</li>
+            </condition>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ Cum ma cheama ^</pattern>
+        <template>
+            <think>
+                <set var="identificanumeledoritorului">
+                    <get name="numeledoritorului" />
+                </set>
+            </think> 
+            <condition var="identificanumeledoritorului">
+                <li value="unknown">Nu stiu pentru ca nu ai spus cum te cheama.</li>
+                <li>Te cheama <get var="identificanumeledoritorului" />.</li>
+            </condition>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ Care este numele meu ^</pattern>
+        <template>
+            <think>
+                <set var="identificanumeledoritorului">
+                    <get name="numeledoritorului" />
+                </set>
+            </think> 
+            <condition var="identificanumeledoritorului">
+                <li value="unknown">Nu stiu pentru ca nu ai spus care este numele tau.</li>
+                <li>Numele tau este <get var="identificanumeledoritorului" />.</li>
+            </condition>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>^ Cum ma numesc ^</pattern>
+        <template>
+            <think>
+                <set var="identificanumeledoritorului">
+                    <get name="numeledoritorului" />
+                </set>
+            </think> 
+            <condition var="identificanumeledoritorului">
+                <li value="unknown">Nu stiu pentru ca nu ai spus cum te numesti.</li>
+                <li>Te numesti <get var="identificanumeledoritorului" />.</li>
+            </condition>
+        </template>
+    </category>
+    <category>
+        <pattern>^ Ce nume am ^</pattern>
+        <template>
+            <think>
+                <set var="identificanumeledoritorului">
+                    <get name="numeledoritorului" />
+                </set>
+            </think> 
+            <condition var="identificanumeledoritorului">
+                <li value="unknown">Nu stiu pentru ca un ai spus ce nume ai.</li>
+                <li>Numele tau este <get var="identificanumeledoritorului" />.</li>
+            </condition>
+        </template>
+    </category>
+
+
+
+
+    <category>
+        <pattern>^ Da ^ </pattern>
+        <template>
+            <delay>1</delay>
+            <image>https://media.giphy.com/media/JbZrv24sIoRji/giphy.gif</image>
+            Ce fel de subgen al filmului horror ai dori sa vizionezi ?
+            <button>
+                <text>Body Horror</text>
+                <postback>body horror</postback>
+            </button>
+            
+            <button>
+                <text>Comedy Horror</text>
+                <postback>comedy horror</postback>
+            </button>
+            
+            <button>
+                <text>Folk horror</text>
+                <postback>folk horror</postback>
+            </button>
+            
+            <button>
+                <text>Found Footage Horror</text>
+                <postback>found footage horror</postback>
+            </button>
+            
+            <button>
+                <text>Gothic Horror</text>
+                <postback>gothic horror</postback>
+            </button>
+            
+            <button>
+                <text>Natural Horror</text>
+                <postback>natural horror</postback>
+            </button>
+            
+            <button>
+                <text>Slasher Horror</text>
+                <postback>slasher horror</postback>
+            </button>
+
+            
+                 
+            
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>^ Nu ^ </pattern>
+        <template>Din pacate pot doar sa iti recomand filme horror, O zi buna !
+        </template>
+    </category>
+    
+  
+    
+</aiml>
